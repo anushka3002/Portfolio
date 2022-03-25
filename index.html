@@ -9,144 +9,491 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="css/animations.css"> -->
-    <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> -->
-    <title>Document</title>
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Hurricane&family=Titillium+Web&display=swap" rel="stylesheet">
+    
+    <title>Anushka Priya</title>
 </head>
-<!-- <script>
-	$(window).scroll(function() {
-		$('#about').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideUp");
-			}
-		});
-	});
-</script>
-<script>
-	$('#about').click(function() {
-		$(this).addClass("slideUp");
-	});
-</script> -->
 <body>
     <!-- header -->
     <div id="header">
-        <span id="lefttop"><p>Anushka</p></span>
+        <span id="lefttop"><p>Anushka Priya</p></span>
+        <section class="p-menu1">
+          <nav id="navbar" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+              <div class="top"></div>
+              <div class="meat"></div>
+              <div class="bottom"></div>
+            </label>
+
+            <input id="toggle1" type="checkbox" />
+            <nav class="menu1" type="checkbox">
+              <a class="link1" id="hamburgerlisthover" href="#bottomintro">About</a>
+              <a class="link1" href="#about">Experience</a>
+              <a class="link1" href="#masaischool">Skills</a>
+              <a class="link1" href="#edutagproject">Projects</a>
+              <a class="link1" href="#footer">Contact</a>
+            </nav>
+        </nav>
+        </section>
+        <!-- <i id="hamburger" class="fa fa-bars" aria-hidden="true"></i> -->
         <span id="righttop"> 
-            <a href="#about"  id="scroll" onclick="pageScroll()"><p  id="highlightpink">About</p></a>
-            <p id="highlightpink">Experience</p>
-            <p id="highlightpink">Skills</p>
-            <p id="highlightpink">Projects</p>
-            <p id="highlightpink">Contact</p>
+            <a href="#bottomintro"><p  id="highlightpink">About</p></a>
+            <a href="#experience"><p id="highlightpink">Experience</p></a>
+            <a href="#masaischool"><p id="highlightpink">Skills</p></a>
+            <a href="#edutagproject"><p id="highlightpink">Projects</p></a>
+            <a href="#footer"><p id="highlightpink">Contact</p></a>
         </span>
     </div>
 
+
 <!-- Introduction -->
-<div id="introphoto" >
+<div id="introphoto" backgroundImage="./header.jpg">
     <div id="intro">
         <div id="topintro">
         <h1>
-            <font color="#c32865">Hello Folk,</font>
-            <font>I'm Anushka</font>
+            <font id="hello">Hi,</font>
+            <font  id="helo" class="awesome">I am Anushka Priya</font>
         </h1>
     </div>
     <div id="bottomintro">
-        <p>Learner | Full Stack Web Developer</p>
+      <p>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Im a Full Stack Web Developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+          <span class="wrap"></span>
+        </a>
+      </p>
     </div>
-    <a href="https://drive.google.com/file/d/1Rblz_177dQgODmLfPdAF5Cx6BeNu9PXV/view?usp=sharing">
-        <button id="resume"><h3>Resume</h3></button></a>
+    <a href="https://drive.google.com/file/d/1Rblz_177dQgODmLfPdAF5Cx6BeNu9PXV/view?usp=sharing" target="_blank">
+        <button id="resume"><p>Resume</p></button></a>
+
     <div id="logo">
-        <a href="https://github.com/anushka3002">
+        <a href="https://github.com/anushka3002" target="_blank">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
-        <a href="https://www.linkedin.com/in/anushka-priya-927697222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhGeLIVQYT3WmrCW3aljkEw%3D%3D">
+        <a href="https://www.linkedin.com/in/anushka-priya-927697222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhGeLIVQYT3WmrCW3aljkEw%3D%3D" target="_blank">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
-        <a href="https://twitter.com/anushkalyf">
+        <a href="https://twitter.com/anushkalyf" target="_blank">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
     </div>
 </div>
     <div id="photo">
-        <img src="./dpwhite2.jpg">
+        <img src="./new.jpg" id="dpanushka">
     </div>
 </div>
 
 <!-- About Section -->
-<div id="about" class="reveal">
+<div id="about">
     <div id="insideabout">
-    <h3>About</h3>
-    <p>Dedicated and efficient full stack web developer with a passion for
-        developing scalable web applications. Have an ability to adapt in
-        both self-starting and collaborative environments while staying
-        focused on achieving high-quality results under strict deadlines.</p>
-        <div id="address">
-        <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-        <p id="info">Rewari, Haryana</p> -->
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path></svg>
-        <p id="info">anushka2457@gmail.com</p>
-        <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"></path></svg>
-        <p id="info">+91 7870353593</p> -->
+      <img src="https://xylomeet.com/wp-content/uploads/2020/06/meet-for-finance.gif" width="40%" id="aboutimage">
+      <div id="rightabout">
+    <h3 id="aboutheading">About</h3>
+    <p id="aboutdescription">Hey! I am Anushka,I love coding
+       and desigining websites. I am both driven and self-motivated, and I am constantly experimenting
+        with new technologies and techniques. I am very passionate about Web Development,
+         and strive to better myself as a developer.</p>
+        <p id="aboutdescription">Till date I have build several projects in Masai School and also learned
+          soft skills and time management and now I am looking for an opportunity as a Full Stack Web Developer.
+        </p>
+        <!-- <div id="address"> -->
+        <!-- <a href = "mailto:anushka2457@gmail.com" target="_blank"> -->
+        <!-- <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path></svg></a> -->
+        <!-- <p id="info">anushka2457@gmail.com</p> -->
     </div></div></div>
+  <!-- </div> -->
 
     <!-- Experience and education -->
 
     <div id="experience">
-        <h1 id="edutag">Experience And Education</h1>
+        <h1 id="edutag" class="reveal">Experience And Education</h1>
 
         <div id="studentguidecoordinator" class="reveal">
+          <span class="expnone" style=" color: rgb(255, 255, 255);">
+            <svg id="noneforwindow" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 28 28" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 7C17 5.34315 15.6569 4 14 4H10C8.34315 4 7 5.34315 7 7H6C4.34315 7 3 8.34315 3 
+                10V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V10C21 8.34315 19.6569 7 18 7H17ZM14 6H10C9.44772 6 9 6.44772 9 7H15C15 
+                6.44772 14.5523 6 14 6ZM6 9H18C18.5523 9 19 9.44772 19 10V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V10C5 9.44772 5.44772
+                 9 6 9Z" fill="currentColor"></path></svg></span>
             <div id="sgccard">
                 <h2>Student Guide Coordinator (For 2 consecutive months) | Masai School Bangalore</h2>
-                <p>Roles and Responsibilities</p>
+                <p id="roles">Roles and Responsibilities :</p>
                 <ul>
-                <li>Looking over student guides groups and marking whether group and one on one meetings were done</li>
-                <li>Making sure that all the doubts are cleared by the student guides of the junior batches</li>
-                <li>Reporting to the operations team if there was no meeting scheduled for students of junior batches</li>
+                <li>Looking over student guides groups and marking whether group and one on one meetings were done.</li>
+                <li>Making sure that all the doubts are cleared by the student guides of the junior batches.</li>
+                <li>Reporting to the operations team if there was no meeting scheduled for students of junior batches.</li>
                 </ul>
+                <h4 id="durationhide">December-2021 ~ February-2022</h4>
             </div>
-            <img>
-            <span class="vertical-timeline-element-icon bounce-in" style="background:#c32865; color: rgb(255, 255, 255);">
-                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <span class="exp" style=" color: rgb(255, 255, 255);">
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17 7C17 5.34315 15.6569 4 14 4H10C8.34315 4 7 5.34315 7 7H6C4.34315 7 3 8.34315 3 
                     10V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V10C21 8.34315 19.6569 7 18 7H17ZM14 6H10C9.44772 6 9 6.44772 9 7H15C15 
                     6.44772 14.5523 6 14 6ZM6 9H18C18.5523 9 19 9.44772 19 10V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V10C5 9.44772 5.44772
                      9 6 9Z" fill="currentColor"></path></svg></span>
-            <div id='duration1'></div>
+            <div id='duration1'>
+                <h4>December-2021 ~ February-2022</h4>
+            </div>
         </div>
 
         <div id="studentguide" class="reveal">
-            <div id="duration2"></div>
-            <img>
+          <span class="expnone" style=" color: rgb(255, 255, 255);">
+            <svg id="noneforwindow" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 28 28" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17 7C17 5.34315 15.6569 4 14 4H10C8.34315 4 7 5.34315 7 7H6C4.34315 7 3 8.34315 3 
+                10V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V10C21 8.34315 19.6569 7 18 7H17ZM14 6H10C9.44772 6 9 6.44772 9 7H15C15 
+                6.44772 14.5523 6 14 6ZM6 9H18C18.5523 9 19 9.44772 19 10V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V10C5 9.44772 5.44772
+                 9 6 9Z" fill="currentColor"></path></svg></span>
+            <div id="duration2">
+                <h4>November ~ December-2021</h4>
+            </div>
+            <span class="exp" style=" color: rgb(255, 255, 255);">
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17 7C17 5.34315 15.6569 4 14 4H10C8.34315 4 7 5.34315 7 7H6C4.34315 7 3 8.34315 3 
+                    10V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V10C21 8.34315 19.6569 7 18 7H17ZM14 6H10C9.44772 6 9 6.44772 9 7H15C15 
+                    6.44772 14.5523 6 14 6ZM6 9H18C18.5523 9 19 9.44772 19 10V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V10C5 9.44772 5.44772
+                     9 6 9Z" fill="currentColor"></path></svg></span>
             <div id="sgcard">
                 <h2>Student Guide | Masai School Bangalore</h2>
-                <p>Roles and Responsibilities</p>
+                <p id="roles">Roles and Responsibilities :</p>
                 <ul>
-                <li>Helping new batches to know the flow of curriculum</li>
-                <li>Clearing the doubts of the junior batch, supporting and motivating them to move ahead without thinking of giving up</li>
-                <li>Meeting with the students in group and one on one via zoom to clear their doubts</li>
+                <li>Helping new batches to know the flow of curriculum.</li>
+                <li>Clearing the doubts of the junior batch, supporting and motivating them to move ahead without thinking of giving up.</li>
+                <li>Meeting with the students in group and one on one via zoom to clear their doubts.</li>
                 </ul>
+                <h4 id="durationhide">November ~ December-2021</h4>
             </div>
         </div>
 
         <div id="masaischool" class="reveal">
+          <span class="expnone" style=" color: rgb(255, 255, 255);">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"></path></svg></span>
             <div id="masaicard">
                 <h2>Full Stack Web Development (Trainee) | Masai School Bangalore</h2>
-                <p>Worked extensively on,</p>
+                <p id="roles">Worked extensively on :</p>
                 <ul>
                 <li>MERN stack</li>
                 <li>Data Structure and Algorithms</li>
                 <li>Soft skills</li>
                 </ul>
+                <h4 id="durationhide">October-2021 ~ May-2022</h4>
             </div>
-            <img>
-            <div id="duration3"></div>
+            <span class="exp" style=" color: rgb(255, 255, 255);">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"></path></svg></span>
+            <div id="duration3">
+                <h4>October-2021 ~ May-2022</h4>
+            </div>
         </div>
     </div>
 
     <!-- Skills and interests -->
-    <div id="skills">
-        
+    <div id="skills" class="reveal">
+        <h1 id="edutagskill">Skills & Interests</h1>
+        <div id="skillbox">
+          <div><p>HTML</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg" id="imgskill"></div>
+            <div><p>CSS</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg" id="imgskill"></div>
+            <div><p>JavaScript</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg" id="imgskill"></div>
+            <div><p>React</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/react.e27571ea.svg" id="imgskill"></div>
+            <div><p>Redux</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/redux.a9567540.svg" id="imgskill"></div>
+            <div><p>NodeJs</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/nodejs-icon.3dc364b8.svg" id="imgskill"></div>
+            <div><p>Data Algorigthm</p>
+              <img src="data:image/png;base64,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" id="imgskill"></div>
+              <div><p>Github</p>
+                <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/github-icon.04ed74f3.svg" id="imgskill"></div>
+              <!-- <div><p>Express</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/express.7e85c513.svg" id="imgskill"></div>
+            <div><p>mongodb</p>
+            <img src="https://portfolio-saravanakumarjn.vercel.app/static/media/mongodb.153b7b44.svg" id="imgskill"></div> -->
+           
+        </div>
     </div>
+
+    <!-- Projects -->
+    <div><h1 id="edutagproject">Projects</h1>
+    <div id="project" class="reveal">
+        <div id="projectcard">
+    <div class="slideshow-container">
+<div class="mySlides1 fade">
+  <img src="./paulas/oneP.png" style="width:100%" id="slide">
+</div>
+<div class="mySlides1 fade">
+  <img src="./paulas/twoP.png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides1 fade">
+  <img src="./paulas/threeP.png" style="width:100%" id="slide">
+</div>
+</div>
+<div id="briefofproject">
+  <h3>Paula's Choice</h3>
+<p id="description">It's an online cosmetics and skin care company that offers products that may be suitable for most skin types. The company's products are environmentally friendly and fragrance- and cruelty-free. Its product formulas are proprietary.</p>
+<!-- </br> -->
+<p>Teck Stack: HTML | CSS | JavaScript</p>
+<a href="https://github.com/sac1010/unit-3-construct-week" target="_blank"><button id="codebutton">Code</button></a>
+<a href="https://friendly-edison-187e8d.netlify.app/" target="_blank"><button id="codebutton">Live</button></a>
+</div></div>
+
+<div id="projectcard">
+    <div class="slideshow-container">
+<div class="mySlides2 fade">
+  <img src="./koovs/koovs1.png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="./koovs/koovs2.png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="./koovs/koovs3.png" style="width:100%" id="slide">
+</div>
+</div>
+<div id="briefofproject">
+  <h3>Koovs</h3>
+<p id="description">It's is the one-stop online fashion destination for all the fashion needs. Inspired by the international runways and the global street scene it delivers A-grade fashion at pocket-friendly prices.</p>
+<p>Teck Stack: HTML | CSS | JavaScript</p>
+<a href="https://github.com/RishabhTG209/KOOVS_Clone" target="_blank"><button id="codebutton">Code</button></a>
+<a href="https://vigorous-meitner-b9028e.netlify.app/" target="_blank"><button id="codebutton">Live</button></a>
+</div></div>
+
+<div id="projectcard">
+    <div class="slideshow-container">
+<div class="mySlides3 fade">
+  <img src="./youtube/2022-03-17 (8).png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides3 fade">
+  <img src="./youtube/2022-03-17 (9).png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides3 fade">
+  <img src="./youtube/2022-03-17 (11).png" style="width:100%" id="slide">
+</div>
+</div>
+<div id="briefofproject">
+  <h3>YouTube</h3>
+<p id="description">This is a YouTube clone made with user authentication API and YouTube API. When user will login, his/her name will be visible on the top right corner of websit</p>
+<p>Teck Stack: HTML | CSS | JavaScript</p>
+<a href="https://github.com/anushka3002/YouTube_clone" target="_blank"><button id="codebutton">Code</button></a>
+<a href="https://heuristic-goldberg-6385e8.netlify.app/" target="_blank"><button id="codebutton">Live</button></a>
+</div></div>
+
+
+<div id="projectcard">
+    <div class="slideshow-container">
+<div class="mySlides4 fade">
+  <img src="./weather/2022-03-17 (12).png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides4 fade">
+  <img src="./weather/2022-03-17 (13).png" style="width:100%" id="slide">
+</div>
+
+<div class="mySlides4 fade">
+  <img src="./weather/2022-03-17 (14).png" style="width:100%" id="slide">
+</div>
+</div>
+<div id="briefofproject">
+  <h3>Weather App</h3>
+<p id="description">It's an app where you can know the weather of different places just by entering the city name, the weather app can also be customized by choosing different themes.</p>
+<p>Teck Stack: HTML | CSS | JavaScript</p>
+<a href="https://github.com/anushka3002/Weather-App" target="_blank"><button id="codebutton">Code</button></a>
+<a href="https://goofy-jackson-19137f.netlify.app/" target="_blank"><button id="codebutton">Live</button></a>
+</div></div>
+
+
+
+</div> </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+    
+    var slideIndex1 = 0;
+    var slideIndex2 = 0;
+    var slideIndex3 = 0;
+    var slideIndex4 = 0;
+showSlides1();
+showSlides2();
+showSlides3();
+showSlides4();
+
+function showSlides1() {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides1");
+
+
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";  
+  }
+  slideIndex1++;
+
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}   
+ 
+  slides1[slideIndex1-1].style.display = "block";   
+  setTimeout(showSlides1, 2500); // Change image every 2 seconds
+}
+
+
+
+// second
+function showSlides2() {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";  
+  }
+
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1}  
+  slides2[slideIndex2-1].style.display = "block";  
+
+  setTimeout(showSlides2, 3000); // Change image every 2 seconds
+}
+
+
+// third
+function showSlides3() {
+  var i;
+  var slides3 = document.getElementsByClassName("mySlides3");
+
+
+  for (i = 0; i < slides3.length; i++) {
+    slides3[i].style.display = "none";  
+  }
+
+
+  slideIndex3++;
+  if (slideIndex3 > slides3.length) {slideIndex3 = 1}  
+
+  slides3[slideIndex3-1].style.display = "block";  
+  setTimeout(showSlides3, 3500); // Change image every 2 seconds
+}
+
+
+// fourth
+
+function showSlides4() {
+  var i;
+  var slides4 = document.getElementsByClassName("mySlides4");
+
+  for (i = 0; i < slides4.length; i++) {
+    slides4[i].style.display = "none";  
+  }
+
+  slideIndex4++;
+  if (slideIndex4 > slides4.length) {slideIndex4 = 1}   
+  slides4[slideIndex4-1].style.display = "block";  
+  setTimeout(showSlides4, 4000); // Change image every 2 seconds
+}
+
+
+
+</script>
+
+
+<!-- contact -->
+<footer id="footer">
+  <h2>Get in touch</h2>
+  <hr>
+  <h1 id="lastnamefooter" class="awesome1">Anushka Priya</h1>
+  <div id="logo1">
+    <a href = "mailto:anushka2457@gmail.com" target="_blank">
+    <svg id="footerlogohide" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path></svg></a>
+    <a href="https://github.com/anushka3002" target="_blank">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+    <a href="https://www.linkedin.com/in/anushka-priya-927697222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhGeLIVQYT3WmrCW3aljkEw%3D%3D" target="_blank">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+    <a href="https://twitter.com/anushkalyf" target="_blank">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+    <a href="tel:7870353593">
+        <svg id="footerlogohide" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"></path></svg></a>
+    </div>
+  <div id="address1">
+    <a href="https://www.google.com/maps/place/Gali+Number+2,+AERD+Society,+Kanmajra,+Haryana+123401/@28.2057183,76.6159975,17z/data=!3m1!4b1!4m5!3m4!1s0x390d5aa2751e8aa7:0x3edd7e36ba37d609!8m2!3d28.2057136!4d76.6181862" target="_blank">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" >lip-rule="evenodd"></path></svg></a>
+    <p id="info">Rewari, Haryana</p>
+    <a href = "mailto:anushka2457@gmail.com" target="_blank">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M23,20 L23,6 L12,15 L1,6 L1,20 L23,20 Z M12,12 L22,4 L2,4 L12,12 Z"></path></svg></a>
+    <p id="info">anushka2457@gmail.com</p>
+    <a href="tel:7870353593">
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="About_icon__1B8FN" height="1.3em" width="1.3em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"></path></svg></a>
+    <p id="info">+91 7870353593</p>
+</div>
+<p id="last">© 2022 Designed and built by Anushka Priya</p>
+</footer>
+
 
 </body>
 </html>
 <script src="index.js"></script>
+<script>
+ var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+</script>
